@@ -139,7 +139,7 @@ module Icalendar
     def parsed_elements
       result = parser.parse(ics_data)
       if result.nil?
-        Icalendar.logger.error "Failed to parse: #{parser.failure_reason}"
+        # Icalendar.logger.error "Failed to parse: #{parser.failure_reason}"
         fail ParseError, parser.failure_reason
       else
         result.elements

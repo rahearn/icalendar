@@ -114,7 +114,7 @@ grammar Ics
   end
 
   rule valuechar
-    [ \t\S]
+    [ \t\S\n]
   end
 
   rule quotedstring
